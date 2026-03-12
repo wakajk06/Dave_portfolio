@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Johndave Juliano – IT Portfolio. Tech Student & IT Enthusiast based in the Philippines." />
+  <title>Johndave Juliano | IT Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body>
+
+  <!-- ─── NAV ─── -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-logo">JD<span class="dot">.</span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn btn-nav" id="navCta">Hire Me</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ─── HERO ─── -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="hero-orb orb1"></div>
+      <div class="hero-orb orb2"></div>
+      <div class="hero-orb orb3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Available for opportunities
+        </div>
+        <h1 class="hero-name">
+          Hi, I'm <span class="gradient-text">Johndave</span><br />
+          Juliano
+        </h1>
+        <p class="hero-role">
+          <span class="role-prefix">I am a </span>
+          <span class="typewriter" id="typewriter"></span>
+          <span class="cursor-blink">|</span>
+        </p>
+        <p class="hero-description">
+          I'm a student who builds Websites, Applications and more cool stuff. With the use of ai i believe that i can
+          do more than what i can do. And i believe ai is the future of coding where you dont need to code everything
+          but
+          you can still build amazing things.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary" id="viewWorkBtn">
+            <span>View My Work</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn-outline" id="contactBtn">Contact Me</a>
+          <a href="images/resume.jpg" target="_blank" class="btn btn-ghost" id="resumeBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            Resume
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num">2+</span>
+            <span class="stat-label">Months Exp.</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">1</span>
+            <span class="stat-label">Projects Done</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">3</span>
+            <span class="stat-label">Tech Stack</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="photo-frame">
+          <img src="images/profile.jpg" alt="Johndave Juliano – IT Portfolio" class="profile-photo" id="profilePhoto" />
+          <div class="photo-ring ring1"></div>
+          <div class="photo-ring ring2"></div>
+          <div class="floating-card card-top" id="cardTop">
+            <div class="fc-icon">💻</div>
+            <div class="fc-text">
+              <span class="fc-title">Full-Stack Dev</span>
+              <span class="fc-sub">HTML · Java · Python</span>
+            </div>
+          </div>
+          <div class="floating-card card-bottom" id="cardBottom">
+            <div class="fc-icon">⚡</div>
+            <div class="fc-text">
+              <span class="fc-title">Problem Solver</span>
+              <span class="fc-sub">Always learning</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <div class="scroll-wheel"></div>
+    </a>
+  </section>
+
+  <!-- ─── ABOUT ─── -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-col">
+          <div class="about-img-wrap">
+            <img src="images/profile.jpg" alt="About Johndave Juliano" class="about-img" />
+            <div class="about-img-decoration"></div>
+          </div>
+          <div class="about-info-cards">
+            <div class="info-card" id="infoCard1">
+              <span class="info-icon">📍</span>
+              <div>
+                <span class="info-label">Location</span>
+                <span class="info-value">Philippines</span>
+              </div>
+            </div>
+            <div class="info-card" id="infoCard2">
+              <span class="info-icon">🎓</span>
+              <div>
+                <span class="info-label">Education</span>
+                <span class="info-value">Grade 11 TechproA Strand</span>
+              </div>
+            </div>
+            <div class="info-card" id="infoCard3">
+              <span class="info-icon">💼</span>
+              <div>
+                <span class="info-label">Status</span>
+                <span class="info-value">Open to Work</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-text-col">
+          <h3 class="about-heading">Passionate IT Professional & <br /><span class="gradient-text">Problem Solver</span>
+          </h3>
+          <p class="about-body">
+            I'm JohnDave Juliano, an Student in the La Consolation University of the Philippines and currently
+            taking TechproA Strand. which stand for Technical Professional and Livelihood Education.
+          </p>
+          <p class="about-body">
+            My journey in tech started with a passion for understanding how things work under the hood.
+            Today, I combine technical expertise with creative thinking to deliver products that are not
+            only functional but delightful to use.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <div class="highlight-icon">🚀</div>
+              <div>
+                <strong>Fast Learner</strong>
+                <p>Quickly adapts to new technologies and frameworks.</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">🤝</div>
+              <div>
+                <strong>Team Player</strong>
+                <p>Collaborates effectively in agile environments.</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">🎯</div>
+              <div>
+                <strong>Detail-Oriented</strong>
+                <p>Delivers clean, well-documented, maintainable code.</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-actions">
+            <a href="#contact" class="btn btn-primary" id="letsConnectBtn">Let's Connect</a>
+            <div class="social-links">
+              <a href="https://github.com" target="_blank" class="social-btn" id="githubBtn" aria-label="GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+              <a href="https://linkedin.com" target="_blank" class="social-btn" id="linkedinBtn" aria-label="LinkedIn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
+              </a>
+              <a href="mailto:julianodave0106@gmail.com" class="social-btn" id="emailBtn" aria-label="Email">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ─── -->
+  <section id="skills" class="skills section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Expertise</span>
+        <h2 class="section-title">My Tech Stack</h2>
+        <p class="section-sub">Technologies and tools I work with professionally</p>
+      </div>
+
+      <div class="skill-categories">
+        <div class="skill-category card-glass" id="skillCat1">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">🌐</div>
+            <h3>Frontend Development</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-wrap" data-skill="HTML & CSS" data-level="50">
+              <div class="skill-bar-label"><span>HTML &amp; CSS</span><span class="skill-pct">50%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" style="--target:50%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category card-glass" id="skillCat2">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">⚙️</div>
+            <h3>Backend Development</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-wrap" data-skill="Java" data-level="60">
+              <div class="skill-bar-label"><span>Java</span><span class="skill-pct">60%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" style="--target:60%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-wrap" data-skill="Python" data-level="40">
+              <div class="skill-bar-label"><span>Python</span><span class="skill-pct">40%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" style="--target:40%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="skill-category card-glass" id="skillCat4">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">🛠️</div>
+            <h3>Tools & Practices</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git / GitHub</span>
+            <span class="skill-tag">Agile / Scrum</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">Figma / UI Design</span>
+            <span class="skill-tag">CI/CD Pipelines</span>
+            <span class="skill-tag">Network Admin</span>
+            <span class="skill-tag">System Analysis</span>
+            <span class="skill-tag">Technical Support</span>
+            <span class="skill-tag">Data Structures</span>
+            <span class="skill-tag">OOP</span>
+            <span class="skill-tag">Testing / QA</span>
+            <span class="skill-tag">Cybersecurity Basics</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ─── -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-sub">A selection of my best work</p>
+      </div>
+
+      <div class="project-filters" id="projectFilters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web App</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+        <button class="filter-btn" data-filter="system">System</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <div class="project-card featured" data-category="system" id="proj1">
+          <div class="project-badge">⭐ Featured</div>
+          <div class="project-img-wrap">
+            <div class="project-img-placeholder" style="background: linear-gradient(135deg,#1e40af,#0ea5e9);">
+              <span>🏦</span>
+            </div>
+            <div class="project-overlay">
+              <a href="https://github.com/wakajk06/project.git" target="_blank" class="btn btn-sm" id="proj1Demo">View
+                Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="ptag">Java</span>
+              <span class="ptag">OOP</span>
+              <span class="ptag">CLI</span>
+            </div>
+            <h3 class="project-title">Java ATM / Bank System</h3>
+            <p class="project-desc">A command-line ATM and banking system built in Java. Features include account
+              creation, login with PIN authentication, balance inquiry, cash deposit &amp; withdrawal, fund
+              transfers between accounts, and transaction history — all implemented using Object-Oriented
+              Programming principles.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── EXPERIENCE ─── -->
+  <section id="experience" class="experience section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Career</span>
+        <h2 class="section-title">Experience &amp; Education</h2>
+      </div>
+
+      <div class="timeline-wrapper">
+        <div class="timeline-col">
+          <h3 class="timeline-col-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="7" width="20" height="14" rx="2" />
+              <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+            </svg>
+            Work Experience
+          </h3>
+          <div class="timeline">
+          </div>
+        </div>
+
+        <div class="timeline-col">
+          <h3 class="timeline-col-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+              <path d="M6 12v5c3 3 9 3 12 0v-5" />
+            </svg>
+            Education
+          </h3>
+          <div class="timeline">
+            <div class="timeline-item" id="edu1">
+              <div class="timeline-dot edu-dot"></div>
+              <div class="timeline-content card-glass">
+                <span class="timeline-date">Present</span>
+                <h4>SHS Student</h4>
+                <span class="timeline-company">Track (Techpro) Computer Programming</span>
+                <p>Currently studying as a Senior High School student with a focus on computer programming.</p>
+                <div class="timeline-tags">
+                  <span>Student</span><span>Techpro</span><span>Programming</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's Work Together</h2>
+        <p class="section-sub">I'm open to freelance projects, full-time roles, and exciting collaborations.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <p class="contact-intro">Feel free to reach out through any of the channels below. I typically respond within
+            24 hours.</p>
+
+          <div class="contact-items">
+            <div class="contact-item" id="contactEmail">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </div>
+              <div>
+                <span class="ci-label">Email</span>
+                <a href="mailto:julianodave0106@gmail.com" class="ci-value">julianodave0106@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item" id="contactPhone">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.24h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.11 6.11l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+              </div>
+              <div>
+                <span class="ci-label">Phone</span>
+                <a href="tel:+639916708774" class="ci-value">+63 991 670 8774</a>
+              </div>
+            </div>
+            <div class="contact-item" id="contactLocation">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <div>
+                <span class="ci-label">Location</span>
+                <span class="ci-value">Philippines (Remote-Ready)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="availability-badge">
+            <div class="avail-pulse"></div>
+            <div>
+              <strong>Available for new opportunities</strong>
+              <p>Freelance &amp; Full-time · Remote / On-site</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form card-glass" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" placeholder="Your first name" required />
+              <span class="field-error" id="firstNameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Your last name" required />
+              <span class="field-error" id="lastNameError"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            <span class="field-error" id="emailError"></span>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="">Select a subject…</option>
+              <option>Job Opportunity</option>
+              <option>Freelance Project</option>
+              <option>Collaboration</option>
+              <option>General Inquiry</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity…"
+              required></textarea>
+            <span class="field-error" id="messageError"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="sendMsgBtn">
+            <span>Send Message</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="22" y1="2" x2="11" y2="13" />
+              <polygon points="22 2 15 22 11 13 2 9 22 2" />
+            </svg>
+          </button>
+          <div class="form-success" id="formSuccess" aria-live="polite">
+            <span>✅</span> Message sent! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">JD<span class="dot">.</span></div>
+      <p class="footer-copy">© 2026 Johndave Juliano · Built with ❤️ &amp; code</p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15" />
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
